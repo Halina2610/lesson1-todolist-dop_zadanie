@@ -16,7 +16,7 @@ export type TasksProps = {
 
 export const Task = (props: TasksProps) => {
     return (
-        <div>
+        <div className="Todolist">
             <h3>{props.title}</h3>
             <div>
                 <input/>

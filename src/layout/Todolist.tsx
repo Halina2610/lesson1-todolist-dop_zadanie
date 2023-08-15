@@ -15,18 +15,6 @@ export type TaskType = {
     students?: string[] | undefined
 }
 
-type Task = {
-    id: number;
-    title: string;
-    isDone: boolean;
-};
-
-type TasksProps = {
-    title: string;
-    tasks: Task[];
-    students: string[];
-};
-
 
 export const Todolist = (props: TodolistPropsType) => {
     return (
