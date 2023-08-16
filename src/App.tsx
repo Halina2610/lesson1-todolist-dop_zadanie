@@ -1,19 +1,58 @@
 import React from 'react';
 import './App.css';
 import {TaskType, Todolist} from "./layout/Todolist";
-import {tasks1, tasks2, tasks3} from "./components/Tasks";
 import {Task, TasksProps} from "./components/Task";
 
 export const App = () => {
     const truck1 = "What to learn"
+    const tasks1: TaskType[] = [
+        {id: 1, title: "HTML&CSS", isDone: true},
+        {id: 2, title: "JS", isDone: true},
+        {id: 3, title: "ReactJS", isDone: false},
+        {id: 4, title: "ReactJS", isDone: false}
+    ]
+
     const truck2 = "What do you see"
+    const tasks2: TaskType[] = [
+        {id: 1, title: "Hello world", isDone: true},
+        {id: 2, title: "I am Happy", isDone: false},
+        {id: 3, title: "Yo", isDone: false}
+    ]
+
+
     const truck3 = "What to do"
+    const tasks3: TaskType[] = [
+        {id: 1, title: "HTML&CSS2", isDone: true},
+        {id: 2, title: "JS2", isDone: true},
+        {
+            id: 3, title: "Students", isDone: false, students: [
+                'Jago Wormald1',
+                'Saul Milne2',
+                'Aariz Hester3',
+                'Dion Reeve4',
+                'Anisa Ortega5',
+                'Blade Cisneros6',
+                'Malaikah Phelps7',
+                'Zeeshan Gallagher8',
+                'Isobella Vo9',
+                'Rizwan Mathis10',
+                'Menaal Leach11',
+                'Kian Walton12',
+                'Liyana Harris',
+                'Kashif Blackburn',
+                'Atif Zimmerman',
+                'Sila Hartley',
+                'Ralphie Hebert'
+            ]
+        }
+    ]
+
 
     const data2: TasksProps = {
         title: "What to learn",
         tasks: [
-            { id: 1, title: "HTML&CSS", isDone: true },
-            { id: 2, title: "JS", isDone: true }
+            {id: 1, title: "HTML&CSS", isDone: true},
+            {id: 2, title: "JS", isDone: true}
         ],
         students: [
             'Rick Kane',
