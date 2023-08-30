@@ -1,3 +1,4 @@
+
 .App {
   padding: 30px;
   display: flex;
@@ -7,9 +8,19 @@
   margin-right: 50px;
 }
 
-.Todolist {
-  background-color: #ffc67b;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #c55008;
+.error {
+  border: red 1px solid;
 }
+
+.error-message {
+  color: red;
+}
+
+.active-filter {
+  background-color: aquamarine;
+}
+
+.is-done {
+  opacity: 0.5;
+}
+
